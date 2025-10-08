@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DHK AERO Assessoria Ltda</title>
+  <meta name="description" content="Soluções especializadas em gestão de motores aeronáuticos, planejamento de manutenção e suporte técnico estratégico.">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: white;
+      background: linear-gradient(to bottom, #0D1F3B, #808080);
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.5rem;
+      background: rgba(0,0,0,0.2);
+      backdrop-filter: blur(5px);
+      border-bottom: 1px solid rgba(255,255,255,0.2);
+      position: sticky;
+      top: 0;
+      z-index: 50;
+    }
+    header img {
+      height: 50px;
+    }
+    header button {
+      font-size: 0.875rem;
+      padding: 0.25rem 1rem;
+      border: 1px solid rgba(255,255,255,0.5);
+      border-radius: 9999px;
+      background: linear-gradient(to right, #606060, #404040);
+      color: white;
+      font-weight: 600;
+      cursor: pointer;
+    }
+    main {
+      max-width: 960px;
+      margin: auto;
+      padding: 2rem;
+    }
+    section {
+      margin-bottom: 6rem;
+    }
+    h2, h3 {
+      font-weight: 800;
+      margin-bottom: 1rem;
+    }
+    p {
+      color: #d1d5db;
+      line-height: 1.6;
+      font-weight: 500;
+    }
+    a.button {
+      display: inline-block;
+      padding: 0.75rem 2rem;
+      border-radius: 9999px;
+      font-weight: bold;
+      color: white;
+      text-decoration: none;
+      background: linear-gradient(to right, #505050, #303030);
+      transition: 0.3s;
+    }
+    a.button:hover {
+      background: linear-gradient(to right, #404040, #202020);
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    ul li::before {
+      content: '• ';
+    }
+    footer {
+      text-align: center;
+      padding: 3rem 1rem;
+      border-top: 1px solid rgba(255,255,255,0.2);
+      font-weight: 600;
+      color: #d1d5db;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="DHK AERO LOGO 1.2.PNG" alt="DHK AERO">
+    <button onclick="toggleLang()" id="langBtn">EN</button>
+  </header>
+
+  <main>
+    <section id="home">
+      <h2 id="homeTitle">Inteligência técnica para maximizar a performance da sua frota</h2>
+      <p id="homeDesc">Soluções especializadas em gestão de motores aeronáuticos, planejamento de manutenção e suporte técnico estratégico.</p>
+      <a href="#contact" class="button" id="homeButton">Fale conosco</a>
+    </section>
+
+    <section id="about">
+      <h3 id="aboutTitle">Engenharia, estratégia e experiência aplicadas à aviação</h3>
+      <p id="aboutText">A DHK AERO nasceu com o propósito de oferecer uma visão técnica e analítica sobre o ciclo de vida de motores aeronáuticos, combinando experiência de campo e gestão corporativa. Nossos serviços englobam desde a gestão completa de motores e powerplants até consultoria estratégica e suporte a MROs e OEMs, garantindo a máxima eficiência operacional.</p>
+    </section>
+
+    <section id="services">
+      <h3 id="servicesTitle">Nossas áreas de atuação</h3>
+      <ul id="servicesList">
+        <li>Gestão de Motores e Powerplants</li>
+        <li>Consultoria Técnica e Contratual</li>
+        <li>Suporte a MROs e OEMs</li>
+        <li>Análise de Ativos e Planejamento Estratégico</li>
+      </ul>
+    </section>
+
+    <section id="experience">
+      <h3 id="experienceTitle">Experiência consolidada no setor aeronáutico</h3>
+      <p>Experiência comprovada com diversos fabricantes e famílias de motores, atuando em programas de manutenção e relacionamento com OEMs.</p>
+      <p style="color: #a0aec0; font-weight: 600; font-size: 0.9rem;">LEAP-1A · CF34-10E · PW100 · GE90-115B · CF6-80C2B6F · CFM56-5B · V2500 · TRENT Series</p>
+    </section>
+
+    <section id="contact">
+      <h3 id="contactTitle">Entre em contato</h3>
+      <p>Interessado em saber como a DHK AERO pode apoiar sua operação? Entre em contato conosco.</p>
+      <a href="mailto:dhkaero@gmail.com" class="button">dhkaero@gmail.com</a>
+    </section>
+  </main>
+
+  <footer>
+    © 2025 DHK AERO Assessoria Ltda · São Paulo, Brasil
+  </footer>
+
+  <script>
+    let lang = 'pt';
+    const content = {
+      pt: {
+        homeTitle: "Inteligência técnica para maximizar a performance da sua frota",
+        homeDesc: "Soluções especializadas em gestão de motores aeronáuticos, planejamento de manutenção e suporte técnico estratégico.",
+        homeButton: "Fale conosco",
+        aboutTitle: "Engenharia, estratégia e experiência aplicadas à aviação",
+        aboutText: "A DHK AERO nasceu com o propósito de oferecer uma visão técnica e analítica sobre o ciclo de vida de motores aeronáuticos, combinando experiência de campo e gestão corporativa. Nossos serviços englobam desde a gestão completa de motores e powerplants até consultoria estratégica e suporte a MROs e OEMs, garantindo a máxima eficiência operacional.",
+        servicesTitle: "Nossas áreas de atuação",
+        servicesList: [
+          "Gestão de Motores e Powerplants",
+          "Consultoria Técnica e Contratual",
+          "Suporte a MROs e OEMs",
+          "Análise de Ativos e Planejamento Estratégico"
+        ],
+        experienceTitle: "Experiência consolidada no setor aeronáutico",
+        experienceText: "Experiência comprovada com diversos fabricantes e famílias de motores, atuando em programas de manutenção e relacionamento com OEMs.",
+        contactTitle: "Entre em contato",
+        contactText: "Interessado em saber como a DHK AERO pode apoiar sua operação? Entre em contato conosco.",
+        contactEmail: "dhkaero@gmail.com",
+        langBtn: "EN"
+      },
+      en: {
+        homeTitle: "Technical intelligence to maximize your fleet performance",
+        homeDesc: "Specialized solutions in aircraft engine management, maintenance planning, and strategic technical support.",
+        homeButton: "Get in touch",
+        aboutTitle: "Engineering, strategy, and experience applied to aviation",
+        aboutText: "DHK AERO was founded with the purpose of providing a technical and analytical view of the aircraft engine lifecycle, combining field experience and corporate management. Our services range from comprehensive engine and powerplant management to strategic consulting and support for MROs and OEMs, ensuring optimal operational performance.",
+        servicesTitle: "Our areas of expertise",
+        servicesList: [
+          "Engine & Powerplant Management",
+          "Technical & Contractual Consulting",
+          "Support to MROs and OEMs",
+          "Asset Analysis & Strategic Planning"
+        ],
+        experienceTitle: "Proven experience in the aviation sector",
+        experienceText: "Proven experience with multiple engine families and OEMs, supporting maintenance programs and strategic partnerships.",
+        contactTitle: "Contact us",
+        contactText: "Interested in learning how DHK AERO can support your operation? Get in touch with us.",
+        contactEmail: "dhkaero@gmail.com",
+        langBtn: "PT"
+      }
+    };
+
+    function toggleLang() {
+      lang = lang === 'pt' ? 'en' : 'pt';
+      const c = content[lang];
+      document.getElementById('homeTitle').innerText = c.homeTitle;
+      document.getElementById('homeDesc').innerText = c.homeDesc;
+      document.getElementById('homeButton').innerText = c.homeButton;
+      document.getElementById('aboutTitle').innerText = c.aboutTitle;
+      document.getElementById('aboutText').innerText = c.aboutText;
+      document.getElementById('servicesTitle').innerText = c.servicesTitle;
+      const ul = document.getElementById('servicesList');
+      ul.innerHTML = '';
+      c.servicesList.forEach(item => { const li = document.createElement('li'); li.innerText = item; ul.appendChild(li); });
+      document.getElementById('experienceTitle').innerText = c.experienceTitle;
+      document.getElementById('contactTitle').innerText = c.contactTitle;
+      document.getElementById('langBtn').innerText = c.langBtn;
+    }
+  </script>
+</body>
+</html>
